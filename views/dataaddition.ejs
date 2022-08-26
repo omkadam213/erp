@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/dataaddition.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Product Registration</header>
+
+        <form action="/dataaddition" method="POST">
+
+            <div class="details personal">
+                <span class="title">General Data</span>
+
+                <div class="fields">
+
+                    <div class="input-field">
+                        <label>Part Number</label>
+                        <input type="text" name="partnumber" placeholder="Enter Part Number">
+                    </div>
+
+
+                    <div class="input-field">
+                        <label>Part Name</label>
+                        <!-- <input type="text" name="partnameplaceholder=" Enter Part Number "> -->
+                        <input type="text" name="partname" placeholder="Enter Part Name">
+                    </div>
+
+
+
+                    <div class="input-field ">
+                        <label>PO Number</label>
+                        <input type="text " name="ponumber " placeholder="Enter PO Number " required>
+                    </div>
+
+                    <div class="input-field ">
+                        <label>Qty</label>
+                        <input type="number " name="quantity " placeholder="Enter Quantity " required>
+                    </div>
+
+
+
+                    <div class="input-field ">
+                        <label>Material Date</label>
+                        <input name="materialdate " type="number " placeholder="Material Date " required>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="form first ">
+                <div class="details personal ">
+                    <span class="title ">In House</span>
+
+
+                    <div class="input-field ">
+                        <label>Setting Number</label>
+                        <select id="settings " name="selection " required>
+                            <option disabled selected>Select Setting</option>
+                            <option value="1 ">Setting1</option>
+                            <option value="2 ">Setting2</option>
+                            <option value="3 ">Setting3</option>
+                            <option value="4 ">Setting4</option>
+                            <option value="5 ">Setting5</option>
+                            <option value="6 ">Setting6</option>
+                            <option value="7 ">Setting7</option>
+                            <option value="8 ">Setting8</option>
+                            <option value="9 ">Setting9</option>
+                            <option value="10 ">Setting10</option>
+                            <option value="11 ">Setting11</option>
+                            <option value="12 ">Setting12</option>
+                            <option value="13 ">Setting13</option>
+                            <option value="14 ">Setting14</option>
+                            <option value="15 ">Setting15</option>
+                        </select>
+                    </div>
+
+                    <div class="fields ">
+                        <div class="input-field ">
+                            <label>Desc</label>
+                            <input type="text " name="desc " placeholder="Enter Part Number ">
+                        </div>
+
+
+
+                        <div class="input-field ">
+                            <label>Machine Name</label>
+                            <input type="text " name="machinename " placeholder="Enter Part Name " required>
+                        </div>
+
+                        <div class="input-field ">
+                            <label>Cycle time</label>
+                            <input type="number " name="cycletime " placeholder="Enter Quantity " required>
+                        </div>
+
+                        <div class="details personal ">
+                            <span class="title ">Outsource</span>
+
+                            <div class="fields ">
+                                <div class="input-field ">
+                                    <label>Process Name</label>
+                                    <input type="text " name="processname " placeholder="Enter Part Number ">
+                                </div>
+
+
+
+                                <div class="input-field ">
+                                    <label>Desc</label>
+                                    <input type="text " name="desc " placeholder="Enter Part Name " required>
+                                </div>
+
+                                <div class="input-field ">
+                                    <label>Supplier Name</label>
+                                    <input type="number " name="suppliername " placeholder="Enter Quantity " required>
+                                </div>
+
+
+
+                                <div class="input-field ">
+                                    <label>Cycle Time</label>
+                                    <input name="cycletime " type="number " placeholder="Material Date " required>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="details ID ">
+
+
+                            <div class="fields ">
+
+
+
+
+
+
+                                <button type="submit " class="nextBtn ">
+                        <span class="btnText ">Register</span>
+                        <i class="uil uil-navigator "></i>
+                    </button>
+                            </div>
+                        </div>
+
+
+        </form>
+        </div>
+
+        <script src="js/dataaddition.js "></script>
+</body>
+
+</html>

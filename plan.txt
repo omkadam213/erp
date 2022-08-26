@@ -1,0 +1,13 @@
+Link between the inhouse + outsourse with general data.
+
+{
+
+    partNumber: 12345
+    partName: xyz
+    poNumber: 22334455
+    qty: 5mt
+    materialDate: 12/05/2022
+
+}
+
+quantity * cycle time will define the width of task
