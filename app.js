@@ -114,7 +114,7 @@ app.post("/admin", function(req, res) {
 })
 
 app.listen(process.env.PORT || 1000, function() {
-    console.log("server is running successfully on port made by om kadam");
+    console.log("server is running successfully on port made by om kadam && Raj Marde");
 })
 
 /*
