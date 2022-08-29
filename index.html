@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<head>  
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+  <style>  
+  #draggable { width: 100px; height: 100px; padding: 0.5em; background:#7fffd4;}  
+  </style>  
+  <script>  
+  $(function() {  
+    $( "#draggable" ).draggable({
+        stop: function(event, ui) {
+    // Show dropped position.
+    var Stoppos = $(this).position();
+    console.log("STOP: \nLeft: "+ Stoppos.left + "\nTop: " + Stoppos.top);
+    //Save the values to cookie o localStorage
+    //I'm gonna use jquery cookie plugin
+    $.cookie("left",Stoppos.left);
+    $.cookie("top",Stoppos.top);
+    console.log($.cookie("left"));
+  }
+    });  
+  });  
+  </script>  
+</head>  
+<body>  
+     <div id="draggable" class="ui-widget-content">  
+      <p>I am draggable!</p>  
+     </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+</body>  
+</html>  
